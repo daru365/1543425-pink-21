@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дарья Мирошниченко](https://up.htmlacademy.ru/adaptive/21/user/1543425).
-* Наставник: `Неизвестно`.
+* Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
 ---
 
