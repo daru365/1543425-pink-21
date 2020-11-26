@@ -24,7 +24,7 @@
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="photo.html">
+            <a href="catalog.html">
               Фотографии
             </a>
           </li>
@@ -44,9 +44,9 @@
 	</header>
 
   <main class="page-form">
-    <section class="page-form">
+    <section class="page-form__wrapper">
       <div class="page-form__main">
-      <h2 class="visually-hidden">Forms</h2>
+      <h2 class="visually-hidden">Ввод данных пользователя</h2>
 
         <p class="page-form__title">Конкурс на самое безбашенное путешествие с Пинк</p>
 
@@ -57,60 +57,60 @@
       <div class="page-form__inputs">
         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <div>
-        <label for="name" class="page-form__form-name">Фамилия:</label>
-          <input class="name-user" id="name" type="text" name="login" placeholder="Укажите фамилию *">
+        <label for="surname-field" class="login-form__form-name">Фамилия:</label>
+          <input class="input-text" type="text" name="surname" id="surname-field" placeholder="Укажите фамилию *">
       </div>
       <div>
-        <label for="name" class="page-form__form-name">Имя:</label>
-          <input class="name-user" id="name" type="text" name="login" placeholder="Введите ваше имя *">
+        <label for="name-field" class="login-form__form-name">Имя:</label>
+          <input class="input-text" type="text" name="name" id="name-field" placeholder="Введите ваше имя *">
       </div>
       <div>
-      <label for="name" class="page-form__form-name">Отчество:</label>
-        <input class="name-user" id="name" type="text" name="login" placeholder="Ну и отчество тоже"> 
+      <label for="patronymic-field" class="login-form__form-name">Отчество:</label>
+        <input class="input-text" type="text" name="patronymic" id="patronymic-field" placeholder="Ну и отчество тоже"> 
       </div>
    
-      <fieldset class="page-form__checkbox">
+      <fieldset class="login-form__checkbox">
         <legend>Ваши безбашенные достижения в путешествии</legend>
         <ul class="checkbox-list">
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0" checked>
-            <label for="task">Сделал селфи с акулой</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-shark" id="task-shark-field" tabindex="0" checked>
+            <label for="task-shark-field">Сделал селфи с акулой</label>
           </li>
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0" checked>
-            <label for="task">Обгорел на пляже</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-beach" id="task-beach-field" tabindex="0" checked>
+            <label for="task-beach-field">Обгорел на пляже</label>
           </li>
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0">
-            <label for="task">Видел Чака Норриса</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-norris" id="task-norris-field" tabindex="0">
+            <label for="task-norris-field">Видел Чака Норриса</label>
           </li>
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0">
-            <label for="task">Накупил сувениров</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-souvenir" id="task-souvenir-field" tabindex="0">
+            <label for="task-souvenir-field">Накупил сувениров</label>
           </li>
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0" checked>
-            <label for="task">Удержал башню</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-tower" id="task-tower-field" tabindex="0" checked>
+            <label for="task-tower-field">Удержал башню</label>
           </li>
           <li class="checkbox-list__item">
-            <input class="checkbox-list__item-achievement" type="checkbox" name="task" id="task" tabindex="0">
-            <label for="task">Разгромил отель</label>
+            <input class="checkbox-list__item-achievement" type="checkbox" name="task-hotel" id="task-hotel-field" tabindex="0">
+            <label for="task-hotel-field">Разгромил отель</label>
           </li>
         </ul>
       </fieldset>
 
-      <div class="page-form__contacts">
+      <div class="login-form__contacts">
       <div>
-        <label for="name" class="page-form__form-name">Номер телефона</label>
-          <input class="name-user" id="name" type="text" name="login" placeholder="Номер, пожалуйста">
+        <label for="num-phone-field" class="login-form__form-name">Номер телефона</label>
+          <input class="input-text" type="text" name="num-phone" id="num-phone-field" placeholder="Номер, пожалуйста">
       </div>
       <div>
-        <label for="name" class="page-form__form-name">Адрес почты</label>
-          <input class="name-user" id="name" type="text" name="login" placeholder="Введите почту *">
+        <label for="email-field" class="login-form__form-name">Адрес почты</label>
+          <input class="input-text" type="text" name="email" id="email-field" placeholder="Введите почту *">
       </div>
       </div>
 
-      <fieldset class="page-form__selection">
+      <fieldset class="login-form__selection">
         <legend>С каким приложением путешествовали?</legend>
         <ul class="selection-list">
           <li class="selection-list__item">
@@ -128,15 +128,16 @@
         </ul>
       </fieldset>
 
-      <div class="page-form__text">
-      <label for="text" class="text-space">опишите свои эмоции</label>
-        <input class="user-text" id="text" type="text" name="text" placeholder="Можно прям в красках, не стесняясь в выражениях"> 
+      <div class="login-form__text">
+      <label for="text-field" class="text-space">опишите свои эмоции</label>
+        <textarea class="user-text" type="text" id="text-field" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </div>
-    </form>
 
-      <button class="page-form__send" type="submit">Отправить форму</button>
+      <button class="login-form__send" type="submit">Отправить форму</button>
 
-      <p class="required-field">* — обязательные поля</p>
+      <p class="required-field">* — обязательные поля</p>    
+
+      </form>
 
     </section>
   </main>
