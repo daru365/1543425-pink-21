@@ -1,5 +1,5 @@
 .page-main__wrapper {
-    background-color: var(--blueback);
+    background-color: @blueback;
     opacity: 0.9;
 }
 .page-main__wrapper:before {
@@ -17,7 +17,7 @@
     font-size: 24px;
     line-height: 29px;
     font-weight: lighter;
-    color: var(--basicwhite);
+    color: @basicwhite;
     width: 280px;
     margin-bottom: 430px;
     padding-top: 15px;
@@ -25,12 +25,8 @@
 .page-main__slogan {
     margin-top: -24px;
 }
-.button--download {
-    border: 3px solid white;
-    border-radius: 29px;
-}
 .page-main__slogan a {
-    color: var(--basicwhite);
+    color: @basicwhite;
     font-size: 18px;
     list-style: 18px;
     font-weight: bold;
@@ -46,37 +42,10 @@
     width: 320px;
     padding-top: 40px;
 }
-.icon--ios:before {
-    content: "";
-    display: inline-block;
-    vertical-align: baseline;
-    position: absolute;
-    background-image: url("../img/apple.svg");
-    width: 47px;
-    height: 56px;
-}
-.icon--android:before {
-    content: "";
-    display: inline-block;
-    vertical-align: baseline;
-    position: absolute;
-    background-image: url("../img/android.svg");
-    width: 43px;
-    height: 47px;
-}
-.icon--microsoft:before {
-    content: "";
-    display: inline-block;
-    vertical-align: baseline;
-    position: absolute;
-    background-image: url("../img/microsoft.svg");
-    width: 44px;
-    height: 41px;
-}
 .page-main__comment {
     padding-top: 28px;
     padding-bottom: 38px;
-    color: var(--basicwhite);
+    color: @basicwhite;
     width: 280px;
     font-size: 14px;
     line-height: 24px;
