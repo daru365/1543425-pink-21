@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/fonts.css" rel="stylesheet">
 </head>
 
-<body class="page__body">
-	<section class="page">
+<body class="page-body">
+	<section class="header-body">
 		<h1 class="visually-hidden">Pink</h1>
 		<header class="page-header">
-			<a class="main-logo--cut">
-				<img src="https://via.placeholder.com/150x150" height="150" width="150" alt="Мобильное приложение Pink">
+			<a class="main-logo--cut" href="index.html">
+				<img src="../img/logo.svg" height="40" width="147" alt="Мобильное приложение Pink">
 			</a>
 
 			<nav class="main-nav">
 				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 				<div class="main-nav__wrapper">
 
-					<ul class="main-nav__list">
+					<ul class="main-nav__list visually-hidden">
 						<li class="main-nav__item">
-							<a>
+							<a href="index.html">
 								Главная
 							</a>
 						</li>
@@ -42,7 +44,8 @@
 				</div>
 			</nav>
 		</header>
-	</section>
+  </section>
+
 
 	<main class="page-main">
 
@@ -79,24 +82,24 @@
 		<section class="advantages">
 			<div class="advantages__wrapper">
 				<h2 class="visually-hidden">Преимущества</h2>
-				<p class="advantages-slogan">Устали от серости мегаполиса? Нам есть, что вам предложить!</p>
-				<ul class="advantages__list">
+				<p class="advantages-slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+        <ul class="advantages__list">
 					<li class="advantages__item">
-						<h3 class="advantages__title">Поднимает настроение</h3>
+						<p class="advantages__title">Поднимает настроение</p>
 						<img src="https://via.placeholder.com/150x150" height="150" width="150" alt="Скрин приложения серый" class="advantages-image image-grey visually-hidden">
-						<p class="page-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+						<p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
 					</li>
 
 					<li class="advantages__item">
-						<h3 class="advantages__title">Меняет мир вокруг</h3>
+						<p class="advantages__title">Меняет мир вокруг</p>
 						<img src="https://via.placeholder.com/150x150" height="150" width="150" alt="Скрин приложения розовый" class="advantages-image image-pink visually-hidden">
-						<p class="page-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+						<p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
 					</li>
 
 					<li class="advantages__item">
-						<h3 class="advantages__title">Заводит новых друзей</h3>
+						<p class="advantages__title">Заводит новых друзей</p>
 						<img src="https://via.placeholder.com/150x150" height="150" width="150" alt="Скрин приложения с иконкой" class="advantages-image image-icon visually-hidden">
-						<p class="page-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых  </p>
+						<p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых  </p>
 					</li>
 				</ul>
 			</div>
@@ -108,8 +111,8 @@
 				<ul class="reviews__list">
 					<li class="reviews__item slider__item">
 						<h3 class="reviews__title">Николай Петров</h3>
-            <p class="page-text--title">25 лет, водитель трамвая</p>
-						<p class="page-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <p class="reviews__text--title visually-hidden">25 лет, водитель трамвая</p>
+						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 					</li>
 				</ul>
 
@@ -174,7 +177,7 @@
 				<h3 class="contacts__title">Приезжайте в гости:</h3>
 				<p class="contacts__link">ул. Большая Конюшенная, 19/8</p>
 
-				<a class="contacts__map" href="#">Карта</a>
+				<a class="contacts__map" href="#"></a>
 
 			</div>
 		</section>
@@ -182,7 +185,7 @@
 
 	<footer class="page-footer social">
 		<div class="page-footer__wrapper">
-			<a class="main-logo" href="#"><img src="https://via.placeholder.com/150x150" class="footer-logo__image" height="150" width="150" alt="Логотип приложения Pink"></a>
+			<a class="footer-logo" href="#"><img src="../img/footlogo.svg" class="footer-logo__image" height="40" width="145" alt="Логотип приложения Pink"></a>
 
 			<div class="page-footer__social">
 				<ul class="social__list">
@@ -198,9 +201,10 @@
 				</ul>
 			</div>
 			<div class="page-footer__copyright">
-				<b class="copyright__text">Разработано:</b>
-				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-			</div>
+				<p class="copyright__text">Разработано:
+				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+			  </p>
+    </div>
 		</div>
 	</footer>
 
