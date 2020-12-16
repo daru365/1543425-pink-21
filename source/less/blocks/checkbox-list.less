@@ -1,0 +1,36 @@
+.checkbox-list {
+    list-style: none;
+}
+.checkbox-list__item {
+    margin-bottom: 69px;
+}
+.checkbox-list__item label {
+    font-size: 18px;
+    line-height: 30px;
+    color: @blueinfo;
+    padding-left: 37px;
+}
+.checkbox-list__item-achievement:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/check.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-top: -12px;
+}
+.checkbox-list__item-achievement:checked:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../img/checkbox.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-top: -12px;
+}
