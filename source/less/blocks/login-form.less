@@ -5,13 +5,14 @@
     line-height: 30px;
     text-transform: uppercase;
 }
-.input-text {
+.login-form__input-text {
+    display: block;
     width: 276px;
     height: 59px;
     border: 2px solid @greydownback;
     border-radius: 2px;
 }
-.input-text[placeholder] {
+.login-form__input-text[placeholder]::placeholder {
     font-size: 18px;
     line-height: 30px;
     font-weight: 400;
@@ -34,7 +35,7 @@
     width: 178px;
     padding-top: 50px;
 }
-.text-space {
+.login-form__text-space {
     color: @basicpink;
     font-size: 14px;
     font-weight: 400;
@@ -44,14 +45,15 @@
 .login-form__text {
     padding-top: 42px;
 }
-.user-text {
+.login-form__user-text {
     width: 276px;
     height: 197px;
 }
-.login-form__text[placeholder] {
+.login-form__user-text[placeholder]::placeholder {
     font-size: 18px;
     line-height: 30px;
     color: @blueinfo;
+    opacity: 1;
 }
 .login-form__send {
     width: 276px;
@@ -70,10 +72,10 @@
     cursor: pointer;
     border: @buttongreen;
 }
-.required-star {
+.login-form__required-star {
     color: @basicpink;
 }
-.required-field {
+.login-form__required-field {
     font-size: 14px;
     line-height: 30px;
     font-weight: 400;
