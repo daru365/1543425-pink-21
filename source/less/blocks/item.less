@@ -1,0 +1,35 @@
+.item label {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: @blueinfo;
+    padding-left: 40px;
+}
+.item {
+    padding-bottom: 20px;
+}
+
+.item-app:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-image: url("../img/radio.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-top: -12px;
+}
+.item-app:checked:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 37px;
+    background-image: url("../img/radiocheck.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    cursor: pointer;
+    margin-top: -12px;
+}
