@@ -14,5 +14,41 @@
     text-transform: uppercase;
     color: @blueinfo;
     margin-top: -37px;
-    margin-left: 50px;
+    margin-left: 70px;
+}
+.catalog__item-top:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 36px;
+    z-index: 10;
+    background-image: url(../img/itemtop.png);
+    background-repeat: no-repeat;
+    left: 180px;
+}
+.catalog__item-top {
+    background-color: @greyback;
+}
+.catalog__item-top img:first-child {
+    margin-left: -40px;
+}
+.catalog__item {
+    background-color: @greyback;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+}
+.catalog__page-text {
+    width: 320px;
+    font-size: 14px;
+    line-height: 24px;
+    color: @blueinfo;
+}
+.catalog__like {
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: @basicpink;
 }

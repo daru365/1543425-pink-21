@@ -60,14 +60,13 @@
 
     <div class="page-photo__catalog">
       <ul class="catalog__list">
-        <li class="catalog__item item-top">
+        <li class="catalog__item-top">
           <img class="user-picture picture-top" src="../img/pano.png"  height="137" width="320" alt="Фотография пользователя - панорама леса">
           <p class="catalog__name">Анна</p>
           <p class="catalog__active">(5 минут назад)</p>
           <p class="catalog__page-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <p class="catalog__like">Нравится: 215
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 215</span>
         </li>
 
         <li class="catalog__item">
@@ -75,9 +74,8 @@
           <p class="catalog__name">Левон</p>
           <p class="catalog__active">(5 часов назад)</p>
           <p class="catalog__page-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="catalog__like">Нравится: 365
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 365</span>
         </li>
 
         <li class="catalog__item">
@@ -85,9 +83,8 @@
           <p class="catalog__name">Антон</p>
           <p class="catalog__active">(12 часов назад)</p>
           <p class="catalog__page-text">Соседи будут рады!</p>
-          <p class="catalog__like">Нравится: 666
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 666</span>
         </li>
 
         <li class="catalog__item">
@@ -95,9 +92,8 @@
           <p class="catalog__name">Борис</p>
           <p class="catalog__active">(20 часов назад)</p>
           <p class="catalog__page-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="catalog__like">Нравится: 215
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 215</span>
         </li>
 
         <li class="catalog__item">
@@ -105,9 +101,8 @@
           <p class="catalog__name">Сергей</p>
           <p class="catalog__active">(25 часов назад)</p>
           <p class="catalog__page-text">Самая кубанская в мире!</p>
-          <p class="catalog__like">Нравится: 4
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 4</span>
         </li>
 
         <li class="catalog__item">
@@ -115,9 +110,8 @@
           <p class="catalog__name">Максим</p>
           <p class="catalog__active">(40 часов назад)</p>
           <p class="catalog__page-text">Где снег-то?</p>
-          <p class="catalog__like">Нравится: 150
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 150</span>
         </li>
 
         <li class="catalog__item">
@@ -125,9 +119,8 @@
           <p class="catalog__name">Надежда</p>
           <p class="catalog__active">(45 часов назад)</p>
           <p class="catalog__page-text">Всем GM и взаимные лайки!</p>
-          <p class="catalog__like">Нравится: 2560
-            <img class="heart" src="#" height="10" width="10">
-          </p>
+            <img class="heart" src="../img/heart.svg" height="12" width="13">
+          <span class="catalog__like">Нравится: 2560</span>
         </li>
       </ul>
     </div>
@@ -136,26 +129,41 @@
   <section class="page-photo__toggles">
     <h3 class="visually-hidden">Управление фильтрами</h3>
     <form class="page-photo__filters">
-      <div>
-      <p class="page-text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="page-photo__text">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
 
-      <img src="https://via.placeholder.com/150x150" class="filters-image" height="150" width="150" alt="Изображение для тестирования фильтров">
-      <ul class="filters__list">
-        <li class="filters__item icon--crop">Фильтр обрезать фото</li>
-        <li class="filters__item icon--fill">Фильтр заливка</li>
-        <li class="filters__item icon--contrast">Фильтр контраст</li>
-      </ul>
-
-    <button class="button--upload" type="submit">Запостить</button>
-    <button class="button--cancel" type="submit">Отмена</button>
+      <div class="page-photo__container">
+      <img src="../img/filterphoto.png" height="374" width="280" alt="Изображение для тестирования фильтров">
+      <div class="filters__list">
+        <div class="filters__list-scale_crop">
+          <div class="filters__list-bar"></div>
+        </div>
+          <div class="filters__list-toggle--crop" tabindex="0"></div>
+      <div class="filters__list">
+        <div class="filters__list-scale_contrast">
+          <div class="filters__list-bar visually-hidden"></div>
+        </div>
+          <div class="filters__list-toggle--contrast" tabindex="0"></div>
+      <div class="filters__list">
+        <div class="filters__list-scale_fill">
+          <div class="filters__list-bar visually-hidden"></div>
+        </div>
+          <div class="filters__list-toggle--fill" tabindex="0"></div>
+        </div>
       </div>
+
+      <div class="filters__list-line"></div>
+
+    <button class="button--post" type="submit">Запостить</button>
+    <div><button class="button--cancel" type="submit">Отмена</button></div>
+      </div>
+    </div>
 
   </form>
   </section>
 
   <footer class="page-footer social">
-    <div class="page-footer__wrapper">
-      <a class="main-logo" href="#"><img src="https://via.placeholder.com/150x150" class="footer-logo__image" height="150" width="150" alt="Логотип приложения Pink"></a>
+    <div class="page-footer__wrapper form">
+      <a class="page-footer__logo" href="#"><img src="../img/footlogo.svg" class="footer-logo__image" height="40" width="145" alt="Логотип приложения Pink"></a>
 
       <div class="page-footer__social">
         <ul class="social__list">
@@ -171,11 +179,13 @@
         </ul>
       </div>
       <div class="page-footer__copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+        <p class="copyright__text">Разработано
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        </p>
+    </div>
     </div>
   </footer>
 
 </body>
+
 </html>
