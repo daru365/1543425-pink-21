@@ -1,5 +1,14 @@
 .page-header {
+    display: flex;
+    flex-direction: column;
     background-color: @blueback;
     color: @basicwhite;
     opacity: 0.9;
+}
+@media (min-width: @tablet-width) {
+    order: 2;
+    height: 110px;
+}
+@media (min-width: @desktop-width) {
+    height: 110px;
 }
