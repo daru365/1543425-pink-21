@@ -31,3 +31,19 @@
     width: 157px;
     left: 100px;
 }
+@media(min-width: @tablet-width) {
+    .advantages__wrapper {
+        width: 660px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media(min-width: @desktop-width) {
+    .advantages__wrapper {
+        width: 1200px;
+    }
+    .advantages__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
